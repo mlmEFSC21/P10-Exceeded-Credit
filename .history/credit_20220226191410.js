@@ -16,13 +16,12 @@ let monthlyCharges = parseInt(prompt("Enter the total charges."));
 let monthlyCredits = parseInt(prompt("Enter the total credits."));
 let creditLimit = parseInt(prompt("Enter the credit limit."));
 
-let newBalance = beginBalance + monthlyCharges - monthlyCredits;
-function creditCheck(balance, limit) {
-    if (balance > limit) {
-        return alert(message);
+let newBalance = customer.beginBalance + monthlyCharges - monthlyCredits;
+function creditCheck() {
+    if (newBalance > creditLimit) {
+        return message;
     }
 }
-creditCheck(newBalance, creditLimit);
 
 customer.accountNo = accountNo;
 customer.beginBalance = beginBalance;

@@ -9,7 +9,7 @@ const customer = {
     newBalance: null,
 };
 
-let message = "Credit limit exceeded";
+let message = alert("Credit limit exceeded");
 let accountNo = parseInt(prompt("Enter the account number."));
 let beginBalance = parseInt(prompt("Enter the beginning account balance."));
 let monthlyCharges = parseInt(prompt("Enter the total charges."));
@@ -19,7 +19,7 @@ let creditLimit = parseInt(prompt("Enter the credit limit."));
 let newBalance = beginBalance + monthlyCharges - monthlyCredits;
 function creditCheck(balance, limit) {
     if (balance > limit) {
-        return alert(message);
+        return message;
     }
 }
 creditCheck(newBalance, creditLimit);

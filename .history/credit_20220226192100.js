@@ -19,7 +19,7 @@ let creditLimit = parseInt(prompt("Enter the credit limit."));
 let newBalance = beginBalance + monthlyCharges - monthlyCredits;
 function creditCheck(balance, limit) {
     if (balance > limit) {
-        return alert(message);
+        return window.alert(message);
     }
 }
 creditCheck(newBalance, creditLimit);
