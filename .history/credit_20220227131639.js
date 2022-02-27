@@ -37,6 +37,20 @@ p5.innerHTML = creditLimit;
 const p6 = document.getElementById("p6");
 p6.innerHTML = newBalance;
 
-let limitExceeded = '<h2 class="limit">CREDIT LIMIT EXCEEDED</h2>';
+let limitExceeded = <h2>Credit limit exceeded</h2>;
 
 creditCheck(newBalance, creditLimit);
+
+customer.accountNo = accountNo;
+customer.beginBalance = beginBalance;
+customer.monthlyCharges = monthlyCharges;
+customer.monthlyCredits = monthlyCredits;
+customer.creditLimit = creditLimit;
+customer.newBalance = newBalance;
+
+console.log(customer.accountNo);
+console.log(customer.beginBalance);
+console.log(customer.monthlyCharges);
+console.log(customer.monthlyCredits);
+console.log(customer.creditLimit);
+console.log(customer.newBalance);

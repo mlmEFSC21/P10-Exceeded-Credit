@@ -37,6 +37,6 @@ p5.innerHTML = creditLimit;
 const p6 = document.getElementById("p6");
 p6.innerHTML = newBalance;
 
-let limitExceeded = '<h2 class="limit">CREDIT LIMIT EXCEEDED</h2>';
+let limitExceeded = '<h2 class="limit">Credit limit exceeded</h2>';
 
 creditCheck(newBalance, creditLimit);
